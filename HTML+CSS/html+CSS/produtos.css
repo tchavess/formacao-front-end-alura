@@ -1,0 +1,9 @@
+header{
+	background: gray;
+}
+.logo{
+float: left;
+}
+.lista-principal{
+	float: right; 
+}
