@@ -94,6 +94,7 @@ footer {
 	margin: 20px 0 0;
 }
 
+	/*CSS Pagina de contatos*/
 main {
 	
 }
@@ -190,6 +191,7 @@ td, th {
 	margin: 0 20px 20px 0;
 }
 
+	/*CSS Section Mapa*/
 .mapa {
 	padding: 3em 0;
 	background: linear-gradient(#FEFEFE, #888888);
@@ -204,6 +206,8 @@ td, th {
 	margin: 0 0 2em;
 	text-align: center;
 }
+
+     /*CSS Section Beneficios*/
 
 .beneficios {
 	padding: 3em 0;
@@ -252,6 +256,8 @@ td, th {
 .video:hover{
 opacity: 0.6;
 }
+
+   /*Design Responsivo*/
 @media screen and (max-width: 480px) {
     .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
         width: auto;
