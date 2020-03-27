@@ -35,19 +35,23 @@ for(var i = 0; i < pacientes.length; i++){
 	}
 
 	if(pesoEhValido && alturaEhValida){
-	    var imc  = peso/(altura * altura);
-		tdImc.textContent = imc.toFixed(2);
+	    
+		tdImc.textContent = calculaImc(peso, altura);
 	}else {
 	    tdImc.textContent = "Altura e/ou peso inválidos!"
 	}
 
 }
 
-var botaoAdicionar = document.querySelector("#adicionar-paciente");
-botaoAdicionar.addEventListener("click", function() {
-	event.preventDefault();
-    console.log("Fui clicado!");
-});
+function calculaImc(peso, altura){
+	
+	var imc  = peso/(altura * altura);
+
+	return imc.toFixed(2);
+
+}
+
+
 
 
 
