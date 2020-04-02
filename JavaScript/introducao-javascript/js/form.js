@@ -18,6 +18,17 @@ botaoAdicionar.addEventListener("click", function(event) {
     return;
     }
 
+    adicionaPacienteNaTabela(paciente);
+    
+
+    //limpa o form no final do processo
+    form.reset();
+
+    var mensagensErro = document.querySelector("#mensagens-erro")
+    mensagensErro.innerHTML = "";
+});
+
+function adicionaPacienteNaTabela(paciente) {
     //Monta o Tr com os Td´s
     var pacienteTr = montaTr(paciente);
 
@@ -26,13 +37,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 
     //Adiciona os Tr´s na tabela
     tabela.appendChild(pacienteTr);
-
-    //limpa o form no final do processo
-    form.reset();
-
-    var mensagensErro = document.querySelector("#mensagens-erro")
-    mensagensErro.innerHTML = "";
-});
+}
 
 function obtemPacienteDoFormulario(form) {
 
