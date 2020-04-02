@@ -57,7 +57,7 @@ function inicializaCronometro() {
 	        campo.attr("disabled", true);
 	        //para o cronometro quando chega no zero
 	        clearInterval(cronometroID);
-
+			campo.toggleClass("campo-desativado");
 	        $("#botao-reiniciar").attr("disabled", false);
 	        }
 	    }, 1000);
@@ -71,6 +71,7 @@ function reiniciaJogo(){
     $("#contador-caracteres").text("0");
     $("#tempo-digitacao").text(tempoInicial);
     inicializaCronometro(); 
+    campo.toggleClass("campo-desativado");
 }
 
 
