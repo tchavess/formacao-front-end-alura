@@ -54,15 +54,21 @@ function inicializaCronometro() {
 	    tempoRestante--;
 	    $("#tempo-digitacao").text(tempoRestante);
 	    if (tempoRestante < 1) {
-	       	//desabilita o campo qnd o cronometro zera
-	        campo.attr("disabled", true);
+	       	
 	        //para o cronometro quando chega no zero
 	        clearInterval(cronometroID);
-			campo.toggleClass("campo-desativado");
+			finalizaJogo();
 	        $("#botao-reiniciar").attr("disabled", false);
 	        }
 	    }, 1000);
 });
+}
+
+function finalizaJogo() {
+   //desabilita o campo qnd o cronometro zera
+	campo.attr("disabled", true);
+    campo.toggleClass("campo-desativado");
+    inserePlacar();
 }
 
 function reiniciaJogo(){
@@ -94,6 +100,28 @@ function inicializaMarcadores() {
     });
 }
 
+function inserePlacar() {
+    var placar = $(".placar");
+    var corpoTabela = placar.find("tbody");
+    var usuario = "Thiago Chaves";
+    var numPalavras = $("#contador-palavras").text();
+
+    var linha = novaLinha(usuario, numPalavras);
+
+    corpoTabela.append(linha);
+}
 
 
 
+
+function novaLinha(usuario, numPalavras) {
+    var linha = $("<tr>");
+    var colunaUsuario = $("<td>").text(usuario);
+    var colunaPalavras = $("<td>").text(numPalavras);
+
+    // Os dois <td> dentro do <tr>
+    linha.append(colunaUsuario);
+    linha.append(colunaPalavras);
+
+    return linha;
+}
