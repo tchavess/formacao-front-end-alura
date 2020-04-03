@@ -119,9 +119,19 @@ function novaLinha(usuario, numPalavras) {
     var colunaUsuario = $("<td>").text(usuario);
     var colunaPalavras = $("<td>").text(numPalavras);
 
-    // Os dois <td> dentro do <tr>
+    var link = $("<a>").attr("href","#").addClass("botao-remover");
+    var icone = $("<i>").addClass("small").addClass("material-icons").text("delete");
+
+    // Ícone dentro do <a>
+    link.append(icone);
+
+    // <a> dentro do <td>
+    colunaRemover.append(link);
+
+    // Os três <td> dentro do <tr>
     linha.append(colunaUsuario);
     linha.append(colunaPalavras);
+    linha.append(colunaRemover);
 
-    return linha;
+	return linha;
 }
