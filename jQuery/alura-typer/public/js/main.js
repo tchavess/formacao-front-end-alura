@@ -1,8 +1,10 @@
-//Selecionamos o campo pelo nome da classe e já associamos o evento input com ele.
+//Selecionamos o campo pelo nome da classe 
 var campo = $(".campo-digitacao");
 
+//Seleciona o texto da tag cujo id tempo-digitacao
 var tempoInicial = $("#tempo-digitacao").text();
 
+//inicializa todas as funcoes necessarias para o funcionamento do jogo
 $(function(){
     atualizaTamanhoFrase();
     inicializaContadores();
@@ -72,14 +74,23 @@ function finalizaJogo() {
 }
 
 function reiniciaJogo(){
+	//habilita o textarea para o jogador inserir o text
     campo.attr("disabled",false);
+    
+    //substitui o texto escrito no textearea por ""(Limpa a caixa de texto)
     campo.val("");
+    
+    //Zera os contadores
     $("#contador-palavras").text("0");
     $("#contador-caracteres").text("0");
+
+    //reinicia o cronometro do jogo
     $("#tempo-digitacao").text(tempoInicial);
+   
     inicializaCronometro(); 
     campo.toggleClass("campo-desativado");
 
+    //remove qq borda colorida da caixa de texto
     campo.removeClass("borda-vermelha");
     campo.removeClass("borda-verde");
 }
@@ -100,45 +111,9 @@ function inicializaMarcadores() {
     });
 }
 
-function inserePlacar() {
-    var placar = $(".placar");
-    var corpoTabela = placar.find("tbody");
-    var usuario = "Thiago Chaves";
-    var numPalavras = $("#contador-palavras").text();
-
-    var linha = novaLinha(usuario, numPalavras);
-    linha.find(".botao-remover").click(removeLinha);
-
-    corpoTabela.append(linha);
-}
 
 
 
 
-function novaLinha(usuario, numPalavras) {
-    var linha = $("<tr>");
-    var colunaUsuario = $("<td>").text(usuario);
-    var colunaPalavras = $("<td>").text(numPalavras);
-    var colunaRemover = $("<td>");
 
-    var link = $("<a>").attr("href","#").addClass("botao-remover");
-    var icone = $("<i>").addClass("small").addClass("material-icons").text("delete");
 
-    // Ícone dentro do <a>
-    link.append(icone);
-
-    // <a> dentro do <td>
-    colunaRemover.append(link);
-
-    // Os três <td> dentro do <tr>
-    linha.append(colunaUsuario);
-    linha.append(colunaPalavras);
-    linha.append(colunaRemover);
-
-	return linha;
-}
-
-function removeLinha(event) {
-    event.preventDefault();
-    $(this).parent().parent().remove();
-}
