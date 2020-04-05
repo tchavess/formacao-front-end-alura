@@ -46,10 +46,10 @@ function inicializaContadores() {
 }
 
 function inicializaCronometro() {
-    var tempoRestante = $("#tempo-digitacao").text();
+    
     //Ativa o cronometro assim que houver focus no textarea
     campo.one("focus", function() {
-
+		var tempoRestante = $("#tempo-digitacao").text();
     	$("#botao-reiniciar").attr("disabled",true);
 
 		var cronometroID = setInterval(function() {
@@ -63,7 +63,7 @@ function inicializaCronometro() {
 	        $("#botao-reiniciar").attr("disabled", false);
 	        }
 	    }, 1000);
-});
+	});
 }
 
 function finalizaJogo() {
@@ -97,21 +97,25 @@ function reiniciaJogo(){
 
 function inicializaMarcadores() {
 
-    var frase = $(".frase").text();
+    
     campo.on("input", function() {
-    var digitado = campo.val();
-	var comparavel = frase.substr(0 , digitado.length);
-	if(digitado == comparavel) {
-	    campo.addClass("borda-verde");
-	    campo.removeClass("borda-vermelha");
-	} else {
-	    campo.addClass("borda-vermelha");
-	    campo.removeClass("borda-verde");
-	}
-    });
+    	var frase = $(".frase").text();
+	    var digitado = campo.val();
+		var comparavel = frase.substr(0 , digitado.length);
+		if(digitado == comparavel) {
+		    campo.addClass("borda-verde");
+		    campo.removeClass("borda-vermelha");
+		} else {
+		    campo.addClass("borda-vermelha");
+		    campo.removeClass("borda-verde");
+		}
+	});
 }
 
-
+function atualizaTempoInicial(tempo) {
+	tempoInicial = tempo;
+    $("#tempo-digitacao").text(tempo);
+}
 
 
 
