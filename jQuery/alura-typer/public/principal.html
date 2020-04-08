@@ -13,6 +13,13 @@
 	    <h1>Alura Typer</h1>
 	    <p class="frase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
+	    <div class="center">
+	    	<img src="img/spinner.gif" alt="Spinner" id="spinner">   
+	    	<p id="erro">
+	    		Ocorreu um erro. Por favor, tente novamente mais tarde.
+	    	</p>
+	    </div>
+
 	    <ul class="informacoes center">
 		    <li>
 		        <i class="small material-icons icones">description</i>
@@ -25,6 +32,7 @@
 		</ul>
 
 	    <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
+	   
 	    <div class="botoes">
 		    <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red">
 			    <i class="material-icons">restore</i>
@@ -35,8 +43,12 @@
 		    <a id="botao-frase" class="btn-floating btn-large waves-effect waves-light blue">
 		        <i class="material-icons">shuffle</i>
 		    </a>
-		</div>
 
+		    <a id="botao-frase-id" class="btn-floating btn-large waves-effect waves-light cyan">
+			    <i class="material-icons">repeat_one</i>
+			</a>
+		</div>
+		<input type="number" min="0" id="frase-id">
 
 		<ul class="center">
 		    <li><span id="contador-caracteres">0</span> caracteres</li>
