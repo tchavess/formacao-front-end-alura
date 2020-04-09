@@ -1,3 +1,5 @@
+$("#botao-sync").click(sincronizaPlacar);
+
 function inserePlacar() {
     var corpoTabela = $(".placar").find("tbody");
     var usuario = "Thiago Chaves";
@@ -63,4 +65,34 @@ function scrollPlacar() {
         scrollTop: posicaoPlacar + "px"
     
     }, 1000);
+}
+
+function sincronizaPlacar(){
+    //Array de placares vazio
+    var placar = [];
+    //Selecionando todos os Trs dentro do tbody
+    var linhas = $("tbody>tr");
+
+    linhas.each(function(){
+        //percorre a lista pegando o filho "nth-child" e armazenando na variavel
+        var usuario = $(this).find("td:nth-child(1)").text();
+        var palavras = $(this).find("td:nth-child(2)").text();
+
+        //Objeto JS com cada linha
+        var score = {
+            usuario: usuario,
+            pontos: palavras            
+        };
+        //Inserindo score no Array placar
+        placar.push(score);
+
+    });
+        //Criando um objeto Js dados que recebe placar para ser enviado no metodo post
+        var dados = {
+            placar: placar
+        };
+
+        $.post("http://localhost:3000/placar", dados, function(){
+            console.log("Placar sincronizado com sucesso");
+        });
 }
