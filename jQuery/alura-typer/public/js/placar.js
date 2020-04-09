@@ -96,3 +96,15 @@ function sincronizaPlacar(){
             console.log("Placar sincronizado com sucesso");
         });
 }
+
+function atualizaPlacar(){
+    $.get("http://localhost:3000/placar",function(data){
+        $(data).each(function(){
+            var linha = novaLinha(this.usuario, this.pontos);
+            //adiciona um evento de remover a linha no botao remover apos o F5
+            linha.find(".botao-remover").click(removeLinha);
+
+            $("tbody").append(linha);
+        });
+    });
+}

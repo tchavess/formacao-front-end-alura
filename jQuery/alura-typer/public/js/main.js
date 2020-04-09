@@ -11,6 +11,9 @@ $(function(){
     inicializaCronometro();
     inicializaMarcadores();
     $("#botao-reiniciar").click(reiniciaJogo);
+    //chamando atualiza placar assim que carregado o ready
+    atualizaPlacar();
+
 });
 
 function atualizaTamanhoFrase() {
