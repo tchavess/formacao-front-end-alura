@@ -1,41 +1,54 @@
-{"usuario":"Flavio","pontos":"2","_id":"1KPvYcMz48RjVlPl"}
-{"usuario":"Douglas","pontos":"5","_id":"7A1UooSmyv6Zeg5e"}
-{"usuario":"Douglas","pontos":"4","_id":"FvsCAnUdU2GGtZWC"}
-{"usuario":"Nico","pontos":"2","_id":"OD8WOnka7c9I939r"}
-{"usuario":"Douglas","pontos":"2","_id":"R0tRrzgjzGJWpOxy"}
-{"usuario":"Douglas","pontos":"2","_id":"kXtTv4FjkvloBhEN"}
-{"$$deleted":true,"_id":"1KPvYcMz48RjVlPl"}
-{"$$deleted":true,"_id":"7A1UooSmyv6Zeg5e"}
-{"$$deleted":true,"_id":"FvsCAnUdU2GGtZWC"}
-{"$$deleted":true,"_id":"OD8WOnka7c9I939r"}
-{"$$deleted":true,"_id":"R0tRrzgjzGJWpOxy"}
-{"$$deleted":true,"_id":"kXtTv4FjkvloBhEN"}
-{"usuario":"Usuario Exemplo","pontos":"99","_id":"Lmnb7EbQLPTNCkVU"}
-{"$$deleted":true,"_id":"Lmnb7EbQLPTNCkVU"}
-{"usuario":"Usuario Exemplo","pontos":"99","_id":"TokQcMgpEjaNbT92"}
-{"$$deleted":true,"_id":"TokQcMgpEjaNbT92"}
-{"usuario":"Usuario Exemplo","pontos":"99","_id":"BjtSmkkIYexKD9oE"}
-{"$$deleted":true,"_id":"BjtSmkkIYexKD9oE"}
-{"usuario":"Usuario Exemplo","pontos":"99","_id":"mdzJZmHqTmefjV7M"}
-{"usuario":"Thiago Chaves","pontos":"6","_id":"cZkzgsBR4xBY8MOW"}
-{"usuario":"Thiago Chaves","pontos":"6","_id":"mlyt1GRwEi169UC0"}
-{"usuario":"Thiago Chaves","pontos":"6","_id":"es3Xerl1ViH9CEEv"}
-{"$$deleted":true,"_id":"cZkzgsBR4xBY8MOW"}
-{"$$deleted":true,"_id":"es3Xerl1ViH9CEEv"}
-{"$$deleted":true,"_id":"mdzJZmHqTmefjV7M"}
-{"$$deleted":true,"_id":"mlyt1GRwEi169UC0"}
-{"usuario":"Usuario Exemplo","pontos":"99","_id":"CdGbsbVq6TQ38JJu"}
-{"usuario":"Thiago Chaves","pontos":"6","_id":"ZTW4nN3cdr1BF17v"}
-{"usuario":"Thiago Chaves","pontos":"6","_id":"u7Ra0TxYsfJkSmfJ"}
-{"usuario":"Thiago Chaves","pontos":"6","_id":"47I7MYEkNjOIeK6O"}
-{"usuario":"Thiago Chaves","pontos":"6","_id":"4PoEUX6jQ84yN8hT"}
-{"$$deleted":true,"_id":"47I7MYEkNjOIeK6O"}
-{"$$deleted":true,"_id":"4PoEUX6jQ84yN8hT"}
-{"$$deleted":true,"_id":"CdGbsbVq6TQ38JJu"}
-{"$$deleted":true,"_id":"ZTW4nN3cdr1BF17v"}
-{"$$deleted":true,"_id":"u7Ra0TxYsfJkSmfJ"}
 {"usuario":"Usuario Exemplo","pontos":"99","_id":"87FChkpP94PgMa7V"}
-{"usuario":"Thiago Chaves","pontos":"6","_id":"TslZL0cTC9NMsYGN"}
 {"usuario":"Thiago Chaves","pontos":"6","_id":"FZutGVaqJBxLxxei"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"TslZL0cTC9NMsYGN"}
 {"usuario":"Thiago Chaves","pontos":"6","_id":"dFjeYKZVXZQKL5Nf"}
 {"usuario":"Thiago Chaves","pontos":"6","_id":"wBC2VkpWfcq2xcCs"}
+{"$$deleted":true,"_id":"87FChkpP94PgMa7V"}
+{"$$deleted":true,"_id":"FZutGVaqJBxLxxei"}
+{"$$deleted":true,"_id":"TslZL0cTC9NMsYGN"}
+{"$$deleted":true,"_id":"dFjeYKZVXZQKL5Nf"}
+{"$$deleted":true,"_id":"wBC2VkpWfcq2xcCs"}
+{"usuario":"Usuario Exemplo","pontos":"99","_id":"nYEvF4EzPzXQi7a1"}
+{"usuario":"Usuario Exemplo","pontos":"99","_id":"r14n6nLn9WFR9QJg"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"Te6ftGfeYxEkPGT6"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"2hCKGYisvGxHX471"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"wXC9oyHqtDV4k9x9"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"BRt6sTP2Mm07O3RJ"}
+{"$$deleted":true,"_id":"2hCKGYisvGxHX471"}
+{"$$deleted":true,"_id":"BRt6sTP2Mm07O3RJ"}
+{"$$deleted":true,"_id":"Te6ftGfeYxEkPGT6"}
+{"$$deleted":true,"_id":"nYEvF4EzPzXQi7a1"}
+{"$$deleted":true,"_id":"r14n6nLn9WFR9QJg"}
+{"$$deleted":true,"_id":"wXC9oyHqtDV4k9x9"}
+{"usuario":"Usuario Exemplo","pontos":"99","_id":"nTeVWDq9RDNNSlt4"}
+{"usuario":"Usuario Exemplo","pontos":"99","_id":"6n1bZDCbFzPCkC33"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"qJ9XGZ5OBSNKpkGr"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"nG0VSf89lqsjagqk"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"ZHg7IoGPgOLGudWU"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"lwKlvuEJeHTLMKHK"}
+{"$$deleted":true,"_id":"6n1bZDCbFzPCkC33"}
+{"$$deleted":true,"_id":"ZHg7IoGPgOLGudWU"}
+{"$$deleted":true,"_id":"lwKlvuEJeHTLMKHK"}
+{"$$deleted":true,"_id":"nG0VSf89lqsjagqk"}
+{"$$deleted":true,"_id":"nTeVWDq9RDNNSlt4"}
+{"$$deleted":true,"_id":"qJ9XGZ5OBSNKpkGr"}
+{"usuario":"Usuario Exemplo","pontos":"99","_id":"ZjreCjcW0BLljRv8"}
+{"usuario":"Usuario Exemplo","pontos":"99","_id":"7W9NlTsgxPul3FNf"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"QbNYPnzdscT12z2Z"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"DEPOgAScPRuPQbeB"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"0Qi0Dbg9pxJVfztj"}
+{"usuario":"Usuario Exemplo","pontos":"99","_id":"3J8fEG1JYaJ3Z11H"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"CqBAuXucFSxo9wQp"}
+{"$$deleted":true,"_id":"0Qi0Dbg9pxJVfztj"}
+{"$$deleted":true,"_id":"3J8fEG1JYaJ3Z11H"}
+{"$$deleted":true,"_id":"7W9NlTsgxPul3FNf"}
+{"$$deleted":true,"_id":"CqBAuXucFSxo9wQp"}
+{"$$deleted":true,"_id":"DEPOgAScPRuPQbeB"}
+{"$$deleted":true,"_id":"QbNYPnzdscT12z2Z"}
+{"$$deleted":true,"_id":"ZjreCjcW0BLljRv8"}
+{"usuario":"Usuario Exemplo","pontos":"99","_id":"ACeDPN9UJLPXcgy5"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"zVsSI0L5uyXinJHA"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"ixMdmMGLWnbUSH6x"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"BYnJPn4HMyqoFuDg"}
+{"usuario":"Thiago Chaves","pontos":"6","_id":"mKlD4VjeSh6YkNmk"}
+{"usuario":"Nicolas Chaves","pontos":"4","_id":"vaV19TcaNBReAx2e"}

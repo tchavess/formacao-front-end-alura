@@ -6,7 +6,7 @@ function fraseAleatoria() {
 
 	$("#spinner").toggle(); //novo, mostrando o spinner
 
-    $.get('http://localhost:3000/frases',trocaFraseAleatoria).fail(function() {
+    $.get('http://localhost:3001/frases',trocaFraseAleatoria).fail(function() {
     	$("#erro").toggle(); //ao falhar mostra a mensagem de erro
     	setTimeout(function(){
             $("#erro").toggle();
@@ -35,7 +35,7 @@ function buscaFrase() {
     var dados = {id : fraseId}; 
 
     //passando objecto como segundo parametro
-    $.get("http://localhost:3000/frases", dados, trocaFrase)
+    $.get("http://localhost:3001/frases", dados, trocaFrase)
     .fail(function(){
         $("#erro").toggle();
         setTimeout(function(){

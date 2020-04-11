@@ -2,7 +2,7 @@ $("#botao-sync").click(sincronizaPlacar);
 
 function inserePlacar() {
     var corpoTabela = $(".placar").find("tbody");
-    var usuario = "Thiago Chaves";
+    var usuario = $("#usuarios").val();
     var numPalavras = $("#contador-palavras").text();
 
     var linha = novaLinha(usuario, numPalavras);
@@ -85,7 +85,6 @@ function sincronizaPlacar(){
         };
         //Inserindo score no Array placar
         placar.push(score);
-
     });
         //Criando um objeto Js dados que recebe placar para ser enviado no metodo post
         var dados = {
@@ -94,6 +93,15 @@ function sincronizaPlacar(){
 
         $.post("http://localhost:3000/placar", dados, function(){
             console.log("Placar sincronizado com sucesso");
+
+            $(".tooltip").tooltipster("open");
+
+        }).fail(function(){
+            $(".tooltip").tooltipster("open").tooltipster("content", "Falha ao sincronizar"); 
+        }).always(function(){ 
+            setTimeout(function() {
+            $(".tooltip").tooltipster("close"); 
+            }, 1200);
         });
 }
 

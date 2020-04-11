@@ -14,6 +14,15 @@ $(function(){
     //chamando atualiza placar assim que carregado o ready
     atualizaPlacar();
 
+    $('#usuarios').selectize({
+	    create: true,
+	    sortField: 'text'
+	});
+
+	$(".tooltip").tooltipster({
+	    trigger: "custom"
+	});
+
 });
 
 function atualizaTamanhoFrase() {
