@@ -8,7 +8,7 @@ function inserePlacar() {
     var linha = novaLinha(usuario, numPalavras);
     linha.find(".botao-remover").click(removeLinha);
 
-    corpoTabela.append(linha);
+    corpoTabela.prepend(linha);
 
     $(".placar").slideDown(500);
     scrollPlacar();
