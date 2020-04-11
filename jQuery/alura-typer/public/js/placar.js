@@ -1,5 +1,5 @@
 $("#botao-sync").click(sincronizaPlacar);
-
+$("#botao-placar").click(mostraPlacar);
 function inserePlacar() {
     var corpoTabela = $(".placar").find("tbody");
     var usuario = $("#usuarios").val();
@@ -12,6 +12,18 @@ function inserePlacar() {
 
     $(".placar").slideDown(500);
     scrollPlacar();
+}
+
+function scrollPlacar() {
+    //Posicao do placar com relacao ao topo da pagina
+    var posicaoPlacar = $(".placar").offset().top;
+
+    $("body").animate(
+    {
+
+        scrollTop: posicaoPlacar + "px"
+    
+    }, 1000);
 }
 
 function novaLinha(usuario, numPalavras) {
@@ -49,22 +61,10 @@ function removeLinha() {
     }, 1000);
 }
 
-$("#botao-placar").click(mostraPlacar);
+
 
 function mostraPlacar() {
     $(".placar").stop().slideToggle(600);
-}
-
-function scrollPlacar() {
-    //Posicao do placar com relacao ao topo da pagina
-    var posicaoPlacar = $(".placar").offset().top;
-
-    $("body").animate(
-    {
-
-        scrollTop: posicaoPlacar + "px"
-    
-    }, 1000);
 }
 
 function sincronizaPlacar(){
@@ -94,13 +94,13 @@ function sincronizaPlacar(){
         $.post("http://localhost:3000/placar", dados, function(){
             console.log("Placar sincronizado com sucesso");
 
-            $(".tooltip").tooltipster("open");
+            $(".tooltipSync").tooltipster("open").tooltipster("content", "Sincronizado com sucesso!");
 
         }).fail(function(){
-            $(".tooltip").tooltipster("open").tooltipster("content", "Falha ao sincronizar"); 
+            $(".tooltipSync").tooltipster("open").tooltipster("content", "Falha ao sincronizar"); 
         }).always(function(){ 
             setTimeout(function() {
-            $(".tooltip").tooltipster("close"); 
+            $(".tooltipSync").tooltipster("close"); 
             }, 1200);
         });
 }
@@ -116,3 +116,41 @@ function atualizaPlacar(){
         });
     });
 }
+
+
+//Logica dos tooltips
+
+$("#botao-placar").mouseenter(function(){
+    $(".tooltipPlacar").tooltipster("open").tooltipster("content", "Mostra/esconde o Placar."); 
+    setTimeout( function(){
+        $(".tooltipPlacar").tooltipster("close");
+    },1200);
+});
+
+$("#botao-frase").mouseenter(function(){
+    $(".tooltipFrase").tooltipster("open").tooltipster("content", "Troca a frase do jogo aleatoriamente."); 
+    setTimeout( function(){
+        $(".tooltipFrase").tooltipster("close");
+    },1200);
+});
+
+$("#botao-frase-id").mouseenter(function(){
+    $(".tooltipFraseId").tooltipster("open").tooltipster("content", "Troca a frase do jogo por ID."); 
+    setTimeout( function(){
+        $(".tooltipFraseId").tooltipster("close");
+    },1200);
+});
+
+$("#botao-reiniciar").mouseenter(function(){
+    $(".tooltipReiniciar").tooltipster("open").tooltipster("content", "Reinicia o jogo."); 
+    setTimeout( function(){
+        $(".tooltipReiniciar").tooltipster("close");
+    },1200);
+});
+
+$("#botao-sync").mouseenter(function(){
+    $(".tooltipSync").tooltipster("open").tooltipster("content", "Sincroniza o placar com o servidor."); 
+    setTimeout( function(){
+        $(".tooltipSync").tooltipster("close");
+    },1200);
+});

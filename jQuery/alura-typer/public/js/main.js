@@ -19,7 +19,7 @@ $(function(){
 	    sortField: 'text'
 	});
 
-	$(".tooltip").tooltipster({
+	$(".tooltipSync,.tooltipPlacar,.tooltipFrase, .tooltipReiniciar,.tooltipFraseId").tooltipster({
 	    trigger: "custom"
 	});
 
