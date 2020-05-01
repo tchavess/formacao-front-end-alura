@@ -17,3 +17,13 @@
   overflow: hidden;
   background-repeat: no-repeat;
 }
+
+
+@function multiplica-pela-fonte($multiplicador){
+  @return $multiplicador * $tamanho-fonte-padrao; 
+}
+
+///////////////////////////////
+
+@import "compass/css3";
+@import "compass/utilities";

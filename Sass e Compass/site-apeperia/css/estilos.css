@@ -1,10 +1,10 @@
-.plataformas-sprite {
-  background-image: url('../imagens/plataformas-s827e4db9cd.png');
+.plataformas-sprite, .plataformas-logo-android, .plataformas-logo-apple, .plataformas-logo-blackberry, .plataformas-logo-windows {
+  background-image: url('../imagens/plataformas-s5695b54b9c.png');
   background-repeat: no-repeat;
 }
 
-.sprite-sprite {
-  background-image: url('../imagens/sprite-s1e035a9ecf.png');
+.sprite-sprite, .sprite-icone-check, .sprite-icone-x {
+  background-image: url('../imagens/sprite-s8ca5edb2ee.png');
   background-repeat: no-repeat;
 }
 
@@ -551,20 +551,20 @@ header .container {
   margin: 1em 1.5em 0 0;
 }
 
-.plataformas li:nth-child(1) {
-  background-image: url(../imagens/logo-apple.png);
+.plataformas-logo-android {
+  background-position: 0 0;
 }
 
-.plataformas li:nth-child(2) {
-  background-image: url(../imagens/logo-android.png);
+.plataformas-logo-apple {
+  background-position: 0 -75px;
 }
 
-.plataformas li:nth-child(3) {
-  background-image: url(../imagens/logo-windows.png);
+.plataformas-logo-blackberry {
+  background-position: 0 -151px;
 }
 
-.plataformas li:nth-child(4) {
-  background-image: url(../imagens/logo-blackberry.png);
+.plataformas-logo-windows {
+  background-position: 0 -211px;
 }
 
 /** Planos **/
@@ -578,7 +578,7 @@ header .container {
 
 .plano {
   background: #fff;
-  width: 18em;
+  width: 288px;
   display: inline-block;
   margin: 1em 0 0 1.4em;
   padding-bottom: 2em;
@@ -638,18 +638,17 @@ header .container {
   margin-left: 2em;
 }
 
-.icone-check, .icone-x {
-  background: url(../imagens/sprite.png) no-repeat;
+.sprite-icone-check {
+  background-position: 0 0;
+}
+
+.sprite-icone-x {
+  background-position: 0 -23px;
+}
+
+.sprite-icone-check, .sprite-icone-x {
   width: 18px;
   height: 18px;
-}
-
-.icone-check {
-  background-position: -5px -5px;
-}
-
-.icone-x {
-  background-position: -33px -5px;
 }
 
 /** Blog **/
@@ -770,8 +769,8 @@ footer::before {
 }
 
 footer .container {
-  padding-top: 3em;
-  height: 6.5em;
+  padding-top: 48px;
+  height: 104px;
   position: relative;
 }
 
