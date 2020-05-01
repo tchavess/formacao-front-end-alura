@@ -26,17 +26,19 @@
   padding: 0;
 }
 
+
 .plataformas li {
   display: inline-block;
   width: 50px;
   height: 60px;
   @extend %image-replacement;
-  background-position: center;
+  /*background-position: center;*/
   margin: 1em 1.5em 0 0;
 }
 
-.plataformas li:nth-child(1) {
-  background-image: url(../imagens/logo-apple.png);
+ @include all-plataformas-sprites;
+.plataformas-logo-apple {
+ 
 }
 
 .plataformas li:nth-child(2) {
@@ -50,3 +52,6 @@
 .plataformas li:nth-child(4) {
   background-image: url(../imagens/logo-blackberry.png);
 }
+
+
+@import "compass/css3";
