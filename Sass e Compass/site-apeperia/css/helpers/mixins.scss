@@ -20,7 +20,7 @@
 
 
 @function multiplica-pela-fonte($multiplicador){
-  @return $multiplicador * $tamanho-fonte-padrao; 
+  @return round($multiplicador * $tamanho-fonte-padrao); 
 }
 
 ///////////////////////////////
